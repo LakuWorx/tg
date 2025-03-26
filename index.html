@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="shortcut icon" type="image/x-icon" href="content/images/favicon.ico?v=13122024">
+        <link rel="stylesheet"    type="text/css"     href="css/pages/index.css?v=13122024">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="js/page.js?v=131220242142"></script>
+        <script src="js/server.js?v=131220242142"></script>
+
+        <title>TG LoggerView</title>
+    </head>
+    <body>
+        <header class="no-select">
+            <div id="logo" onclick="window.location.href='index.html'" title="Перейти на главную страницу">
+                <div id="logo-icon"></div><div id="logo-text">LakuWorx</div>
+            </div>
+        </header>
+
+        <div id="scroll-to-top" title="На самый верх" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"></div>
+
+        <content>
+            <div id="main-content">
+                <video autoplay loop muted style="width: 128px; height: 128px;" id="webm">
+                    <source src="content/webm/loading.webm" type="video/webm">
+                </video>
+            </div>
+        </content>
+
+        <script>
+            window.onload = async () => {
+                const savedFingerprint = localStorage.getItem("session_token");
+                if (savedFingerprint) {
+                    checkLogin();
+                }
+            };
+        </script>
+    </body>
+</html>
