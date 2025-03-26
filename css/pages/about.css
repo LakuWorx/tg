@@ -1,0 +1,32 @@
+@import url("../main.css");
+@import url("../page.css");
+
+content #main-content {
+    font-family: "montserrat-regular";
+    font-size: 20px;
+    line-height: 1.4;
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-left: 48px;
+    padding-right: 48px;
+
+    background-image: url("../../content/images/background-1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+content #main-content #webm {
+    margin-bottom: 24px;
+}
+
+content #main-content #go-back {
+    margin-top: 24px;
+}

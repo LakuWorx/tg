@@ -1,0 +1,22 @@
+/* Montserrat: */
+
+@font-face {
+    font-family: "montserrat-medium";
+    src: url("fonts/Montserrat/medium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "montserrat-semibold";
+    src: url("fonts/Montserrat/semibold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "montserrat-regular";
+    src: url("fonts/Montserrat/regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
